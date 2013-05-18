@@ -50,6 +50,21 @@ a:hover {
     text-decoration: none;
 }
 
+pre {
+    max-width: 100%;
+    padding: 10px 10px;
+    background: #262626;
+    border-left: 10px #747070 solid;
+    color: #f0822c;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    line-height: 25px;
+    overflow-x: auto;
+}
+
 .navbar .brand {
     margin-left: 10px;
 }
