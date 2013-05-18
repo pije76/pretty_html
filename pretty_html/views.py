@@ -13,7 +13,7 @@ def index():
 @app.route("/result", methods=["GET", "POST"])
 def result():
     form = HtmlPrettify()
-    if form.validate_on_submit:
+    if form.validate_on_submit():
         return render_template("result.html")
 
     return redirect('/')
