@@ -1,25 +1,29 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
 body {
     background: url('/static/website/img/background.png');
 }
 
 .main-wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px;
     background: white;
-    width: 920px;
     -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-    margin-top: 40px;
 }
 
 .content-wrapper {
-    min-height: 100%;
-    height: auto !important;
-    margin: 40px auto -100px;
+    padding: 25px;
 }
 
 textarea {
-    width: 905px;
-    max-width: 905px;
+    width: 880px;
+    max-width: 880px;
     min-height: 200px;
 }
 
@@ -35,10 +39,6 @@ button {
 
 button:hover {
     background: rgb(75, 139, 116);
-}
-
-.main-wrapper {
-    padding: 10px;
 }
 
 hr {
@@ -81,12 +81,10 @@ pre {
 
 footer, .push {
     height: 100px;
-    margin-top: 20px;
 }
 
 footer {
     background: gray;
-    padding: 10px;
     text-align: center;
 }
 
