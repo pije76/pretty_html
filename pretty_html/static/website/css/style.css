@@ -81,8 +81,15 @@ pre {
 
 footer, .push {
     height: 100px;
+    margin-top: 20px;
 }
 
 footer {
     background: gray;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
 }
