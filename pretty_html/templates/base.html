@@ -11,8 +11,10 @@
             <div class="navbar-inner">
                 <div class="container">
                     <ul class="nav">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li {% if request.path=="/" %}class="active"{% endif %}><a href="/">Home</a></li>
+                        {% if request.path=="/result" %}
+                        <li class="active"><a href="/">Result</a></li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
