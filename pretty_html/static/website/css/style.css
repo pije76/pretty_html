@@ -2,6 +2,10 @@ body {
     background: url('/static/website/img/background.png');
 }
 
+.main-wrapper{
+    background: white;
+}
+
 textarea {
     width: 925px;
     min-height: 200px;
@@ -30,6 +34,10 @@ hr {
     border: 0;
     border-top: 2px dashed #000;
     border-bottom: 1px solid #fff;
+}
+
+a {
+    color: rgb(75, 139, 116);
 }
 
 a:hover {
