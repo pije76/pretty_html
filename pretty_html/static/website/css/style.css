@@ -49,6 +49,10 @@ hr {
     border-bottom: 1px solid #fff;
 }
 
+h1 {
+    font-size: 20px;
+}
+
 a {
     color: rgb(75, 139, 116);
 }
