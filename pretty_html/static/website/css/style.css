@@ -53,3 +53,7 @@ a:hover {
 .navbar .brand {
     margin-left: 10px;
 }
+
+.errors {
+    color: red;
+}

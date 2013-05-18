@@ -22,13 +22,20 @@
                 <h1>Html Prettify by <small><a href="http://twitter.com/fananimi" target="_blank">@fananimi</a></small></h1>
             </div>
             <hr>
-            <form action="" method="post">
+            <form action="/" method="post">
+                {{ form.hidden_tag() }}
                 <p>
                     {{ form.html.label }}
+                    {% for error in form.errors.html %}
+                        <span class="errors">{{ error }}</span>
+                    {% endfor %}<br>
                     {{ form.html }}<br>
                 </p>
                 <p>
                     {{ form.indentation.label }}
+                    {% for error in form.errors.indentation %}
+                        <span class="errors">{{ error }}</span>
+                    {% endfor %}<br>
                     {{ form.indentation }}<br>
                 </p>
                 <button>PROCESS</button>
