@@ -4,11 +4,17 @@ body {
 
 .main-wrapper{
     background: white;
-    margin-top: 40px;
     width: 920px;
     -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+
+.content-wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin: 40px auto -100px;
 }
 
 textarea {
@@ -71,4 +77,12 @@ pre {
 
 .errors {
     color: red;
+}
+
+footer, .push {
+    height: 100px;
+}
+
+footer {
+    background: gray;
 }

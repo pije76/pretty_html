@@ -24,9 +24,17 @@
                 <h1>Html Prettify <small>by <a href="http://twitter.com/fananimi" target="_blank">@fananimi</a></small></h1>
             </div>
             <hr>
-            {% block content %}
-            {% endblock %}
+            <div class="content-wrapper">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="push"></div>
         </div>
+        <footer>
+            <div class="container">
+                <h1>Hello</h1>
+            </div>
+        </footer>
         {% block script %}
         {% endblock %}
     </body>
