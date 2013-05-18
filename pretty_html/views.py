@@ -17,7 +17,7 @@ def result():
     if form.validate_on_submit():
         data = form.data
         html = BeautifulSoup(data['html'].encode('utf-8'))
-        pretty_html = html.prettify()
+        pretty_html = html.prettify(formatter="html")
         return render_template("result.html", pretty_html=pretty_html)
 
     return redirect('/')
