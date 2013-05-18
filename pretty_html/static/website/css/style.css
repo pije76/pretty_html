@@ -81,10 +81,11 @@ pre {
 }
 
 footer, .push {
-    height: 100px;
+    height: 80px;
 }
 
 footer {
+    padding: 10px;
     background: gray;
     text-align: center;
 }
