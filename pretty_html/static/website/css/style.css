@@ -19,6 +19,7 @@ body {
 
 .content-wrapper {
     padding: 25px;
+    padding: 40px 25px 25px;
 }
 
 textarea {
