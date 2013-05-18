@@ -4,11 +4,16 @@ body {
 
 .main-wrapper{
     background: white;
+    margin-top: 40px;
+    width: 920px;
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 }
 
 textarea {
-    width: 925px;
-    max-width: 925px;
+    width: 905px;
+    max-width: 905px;
     min-height: 200px;
 }
 
@@ -43,4 +48,8 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+.navbar .brand {
+    margin-left: 10px;
 }
