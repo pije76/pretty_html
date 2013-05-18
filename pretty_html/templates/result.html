@@ -23,7 +23,23 @@
     </form>
     {% endif %}
     {% if pretty_html %}
-        <button>COPY</button>
-        <pre>{{ pretty_html }}</pre>
+        <button id="copy-button">Copy</button>
+        <pre id="result">{{ pretty_html }}</pre>
     {% endif %}
+{% endblock %}
+
+{% block script %}
+    <script src="/static/website/js/jquery-1.9.1.min.js"></script>
+    <script src="/static/website/js/jquery.zclip.min.js"></script>
+    <script>
+        $("#copy-button").zclip({
+            path: "/static/website/swf/ZeroClipboard.swf",
+            copy: function(){
+                return ($('#result').text())
+            },
+            afterCopy:function(){
+                alert("Successfully copy result to clipboard.");
+            }
+        });
+    </script>
 {% endblock %}
