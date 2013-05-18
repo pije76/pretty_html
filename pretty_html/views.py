@@ -1,5 +1,5 @@
 from pretty_html import app
-from flask import render_template, redirect
+from flask import render_template
 from bs4 import BeautifulSoup
 
 from .forms import HtmlPrettify
@@ -20,4 +20,4 @@ def result():
         pretty_html = html.prettify(formatter="html")
         return render_template("result.html", pretty_html=pretty_html)
 
-    return redirect('/')
+    return render_template("result.html", form=form)

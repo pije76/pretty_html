@@ -1,5 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
-    <button>COPY</button>
-    <pre>{{ pretty_html }}</pre>
+    {% if form %}
+    <form action="/result" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.html.label }}
+            {% for error in form.errors.html %}
+                <span class="errors">{{ error }}</span>
+            {% endfor %}<br>
+            {{ form.html }}<br>
+        </p>
+        {#
+        <p>
+            {{ form.indentation.label }}
+            {% for error in form.errors.indentation %}
+                <span class="errors">{{ error }}</span>
+            {% endfor %}<br>
+            {{ form.indentation }}<br>
+        </p>
+        #}
+        <button>PROCESS</button>
+    </form>
+    {% endif %}
+    {% if pretty_html %}
+        <button>COPY</button>
+        <pre>{{ pretty_html }}</pre>
+    {% endif %}
 {% endblock %}
