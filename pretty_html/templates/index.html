@@ -11,14 +11,10 @@
                 <h1>Pretty Html by <small><a href="http://twitter.com/fananimi" target="_blank">@fananimi</a></small></h1>
             </div>
             <hr>
-            <form>
-                <p>html</p>
+            <form action="" method="post">
                 <p>
-                    <textarea></textarea>
-                </p>
-                <p>indentation (int)</p>
-                <p>
-                    <input type="text" placeholder="4">
+                    {{ form.html.label }}
+                    {{ form.html }}<br>
                 </p>
                 <button>PROCESS</button>
             </form>
