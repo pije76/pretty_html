@@ -1,5 +1,6 @@
 from pretty_html import app
 from flask import render_template, redirect
+from bs4 import BeautifulSoup
 
 from .forms import HtmlPrettify
 
@@ -14,6 +15,9 @@ def index():
 def result():
     form = HtmlPrettify()
     if form.validate_on_submit():
-        return render_template("result.html")
+        data = form.data
+        html = BeautifulSoup(data['html'].encode('utf-8'))
+        pretty_html = html.prettify()
+        return render_template("result.html", pretty_html=pretty_html)
 
     return redirect('/')
